@@ -1,8 +1,7 @@
 #!/bin/bash
-# @Date: 2015/06/11
+
 # Usage: sh run.sh start|stop
 
-#
 cd $(dirname $0)
 export BIN_DIR=$(pwd)
 cd $BIN_DIR
