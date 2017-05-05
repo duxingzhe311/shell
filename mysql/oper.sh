@@ -7,12 +7,12 @@
 #PRIMARY KEY (`id`));
 #
 
-#注意下面的账号密码
+#注意下面的账号密码和数据库名字
 conn="/usr/local/mysql/bin/mysql -uroot -pcloud_angel"
 
 echo "欢迎光临！"
+echo "请按照以下提示进行操作："
 function loop(){
-	echo "请按照以下提示进行操作："
 	echo "查询请输入'1'，插入请输入'2'，修改请输入'3'，删除请输入'4'，清空请输入'5'，退出请输入'0'"
 	
 	read op
