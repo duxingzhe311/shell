@@ -15,7 +15,7 @@ function loop(){
 	echo "请按照以下提示进行操作："
 	echo "查询请输入'1'，插入请输入'2'，修改请输入'3'，删除请输入'4'，清空请输入'5'，退出请输入'0'"
 	
-	read -s op
+	read op
 	
 	case $op in
 	0)
@@ -48,7 +48,7 @@ function do_select(){
 
 function do_insert(){
 	echo "请输入用户名：" 
-	read -s username
+	read username
 	echo "请输入密码："
 	read -s  password
 	
@@ -59,9 +59,9 @@ function do_insert(){
 
 function do_update(){
 	echo "请输入要修改的数据的id："
-	read -s uid
+	read uid
 	echo "请输入新用户名：" 
-	read -s username
+	read username
 	echo "请输入新密码："
 	read -s  password
 	sql="update test.test_user set name = '$username',password = '$password' where id = $uid";
@@ -71,7 +71,7 @@ function do_update(){
 
 function do_delete(){
 	echo "请输入要删除的数据的id："
-	read -s uid
+	read uid
 	sql="delete from test.test_user where id = $uid";
 	$conn -e "$sql"
 	echo "OK"
