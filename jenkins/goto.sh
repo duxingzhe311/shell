@@ -93,7 +93,7 @@ USER="rd"
 
 checkIPAddr $1
 if [ $? -ne 1 ];then
-    /usr/bin/sshpass -p "TJb6ZdGERP1MzNUijfjfvaewKs4bkEmi" ssh $USER@$1 -o StrictHostKeyChecking=no
+    /usr/bin/sshpass -p "xxx" ssh $USER@$1 -o StrictHostKeyChecking=no
 else
     echo "-----------------"
     index=$(get_index $1)
@@ -115,6 +115,6 @@ else
     echo $server
     echo $server | grep "no" &> /dev/null
     if [ $? -ne 0 ]; then
-        /usr/bin/sshpass -p "TJb6ZdGERP1MzNUijfjfvaewKs4bkEmi" ssh $USER@$server -o StrictHostKeyChecking=no
+        /usr/bin/sshpass -p "xxxxxxx" ssh $USER@$server -o StrictHostKeyChecking=no
     fi
 fi

@@ -7,8 +7,8 @@ SERVICE_GROUP="${PLATFORM_NAME}.${MODULE_NAME}.ecs.bj"
 HTTP_PORT=8180
 
 # 阿里云相关，无需修改
-OSS_BUCKET=inf-production
-DOMAIN_NAME=oss-cn-beijing-internal.aliyuncs.com
+OSS_BUCKET=chen-production
+DOMAIN_NAME=oss-cn-xxx-internal.aliyuncs.com
 
 # 获取版本号
 if [ "$VERSION"x = "latest_version"x ]; then
